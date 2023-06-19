@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Lato:ital,wght@0,400;0,700;1,400&family=Lexend:wght@200&family=Macondo&display=swap');
+
+body {
+    line-height: 1.8;
+    
+    font-size: 15px;
+}
+p{
+    color: rgb(2, 2, 2);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(85, 15, 15, 0.952);
+}
+
+a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+ 
+}
+
+img {
+    width: 100%;
+}
+
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.fullscreenvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: fit-content;
+    width:1200px;
+    z-index: -100;
+    overflow: hidden;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(185, 134, 134, 0.1);
+background-color: rgba(255, 255, 255, 0.637);
+
+}
+
+.navbar .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(18, 18, 20);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    color: rgba(85, 15, 15, 0.87);
+    letter-spacing: 2px;
+}
+.nav .navbar .container a:hover{
+color: rgba(85, 15, 15, 0.719);
+}
+
+#booktable{
+    background-color:rgba(109, 84, 61, 0.377) ;
+    padding: 12px;
+    text-decoration: none;
+    
+    width:20%;
+    text-align: center;
+    border-radius: 12px;
+    height:10%;
+    color: rgba(85, 15, 15, 0.945);
+}
+#booktable:hover{
+    transform: translateX(12px);
+    background-color: rgba(240, 248, 255, 0.404);
+}
+#home{
+   
+margin-top: 15%;
+}
+#home p{
+font-weight: 900;
+}
+#button{
+    margin-right: 20px;
+    text-decoration: none;
+    color:  rgb(61, 2, 2);
+   background-color:rgba(109, 84, 61, 0.63);
+   padding: 10px;
+   border-radius: 20px;
+}
+#button:hover{
+    color: rgb(61, 2, 2);
+   background-color:rgba(240, 248, 255, 0.192) ;
+}
+#about{
+    background: linear-gradient(rgba(48, 48, 46, 0.822), rgba(241, 155, 98, 0.226)), url(img/about-bg.jpg); 
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+}
+
+#about img:hover{
+   transform:scale(1.05,1.05);
+border: 2px solid ;
+}
+#choose .col{ 
+background-color: rgba(241, 218, 195, 0.377);
+margin-right:11px;
+}
+.col1 p,h5,h4{
+    color: azure;
+    line-height:30px;
+padding: 20px;
+}
+.col1:hover{
+transform: translateY(12px);
+}
+#choose .col:hover{
+transition: all 1s ease-in;
+background-color: rgba(245, 188, 135, 0.507);
+
+}
+
+#choose{
+    background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.226));
+    min-height: 100vh;
+
+    background-attachment: fixed;
+
+}
+.dash img{
+    width: 80px;
+}
+
+#Specials{
+    background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.226));
+    min-height: 100vh;
+
+    background-attachment: fixed;
+
+}
+#Specials .nav {
+    margin-left: 6%;
+    border-right: 7px solid #cda45e;
+    padding:10px;
+   border-bottom: 0;
+
+}
+
+#Specials  .nav-link{
+    color: aliceblue;
+    width: 200px;
+}
+#Specials .nav-link:hover {
+    color: #cda45e;
+  }
+  
+  #Specials .nav-link.active {
+    color: #1a1814;
+    background: #cda45e;
+    border-color: #cda45e;
+  }
+
+#Events{
+    background: linear-gradient(rgba(48, 48, 46, 0.822), rgba(241, 155, 98, 0.226)), url(img/events-bg.jpg); 
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+}
+
+#Events .carousel img{
+margin-left: -10%;
+}
+
+#price{
+    color: white;
+    font-size: 32px;
+    margin-top: -4%;
+}
+
+.Gallery img:hover{
+transform: scale(1.1,1.1);
+transition: .5s;
+}
+
+
+
+
+.contant{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.5s 0.2s;
+    text-align: center;
+    position: relative;
+    top: 0;
+  }
+
+  .contant a{
+    margin-left: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #5a5a5ab2;
+color: aliceblue;
+  }
+  
+  #Chefs:hover  .contant{
+    opacity: 4;
+    transition-delay: 0.3s;
+    transform: translateY(0px);
+    top: -100px;
+   
+  }
+
+  #contact{
+    margin-top: -10%;
+  }
+
+.message{
+    margin-left: 40%;
+    margin-top: -20%;
+}
+
+#footer li:hover{
+    color: rgb(240, 189, 114);
+}
+
+
+
+
+
+
+
+
+
+
+
+
